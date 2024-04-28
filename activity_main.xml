@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:padding="20dp"
+        android:text="@string/step_counter"
+        android:textColor="@color/black"
+        android:textSize="45sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/stepCountTargetTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:text="@string/step_goal_5000"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="130dp"
+        android:layout_height="187dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/circular"
+        android:padding="10dp"
+        android:progressDrawable="@drawable/custom_progress"/>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView android:layout_width="79dp"
+        android:layout_height="96dp"/>
+<!--        android:src="@drawable/step"/>-->
+
+        <TextView android:id="@+id/stepCountTextView"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="Steps: 0"
+            android:padding="20dp"
+        android:textSize="24sp"
+        android:textColor="@color/black" android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView android:layout_width="79dp"
+            android:layout_height="96dp"/>
+<!--            android:src="@drawable/step"/>-->
+
+        <TextView android:id="@+id/distanceTextView"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="distance: 0"
+            android:padding="20dp"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView android:layout_width="79dp"
+            android:layout_height="96dp"/>
+<!--            android:src="@drawable/step"/>-->
+
+        <TextView android:id="@+id/timeTextView"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="time: 0"
+            android:padding="20dp"
+            android:textSize="24sp"
+            android:textColor="@color/black" android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <Button android:id="@+id/pauseButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="28dp"
+        android:onClick="onPauseBυttοnclicked"/>
+
+</LinearLayout>
