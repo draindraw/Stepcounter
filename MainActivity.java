@@ -1,4 +1,4 @@
-package com.example.stepcountingandrewardapp;
+package com.example.stepcounterandrewardapp;
 
 import android.content.Context;
 import android.hardware.Sensor;
